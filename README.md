@@ -22,7 +22,7 @@ If you are using Anaconda, creating a new, clean 'wrfh_gis_env' environment with
 
 * In your conda shell, add one necessary channel (conda-forge) and then download the component libraries from the Anaconda cloud:
   + `conda config --add channels conda-forge`
-  + `conda create -n wrfh_gis_env -c conda-forge python=3.10 gdal netCDF4 numpy pyproj whitebox=2.3.5 packaging shapely`
+  + `conda create -n wrfh_gis_env -c conda-forge python=3.10 gdal=3.6.3 netCDF4=1.6.3 numpy=1.24.2 pyproj=3.4.1 whitebox=2.3.5 packaging=23.0 shapely=2.0.1`
   
 * To activate this new environment, type the following at the conda prompt
   + `activate wrfh_gis_env`
@@ -42,4 +42,5 @@ Use `-h` when calling any of the scripts on the command-line, for help informati
 `python Build_Routing_Stack.py -i geo_em.d01.nc -d NED_30m_Croton.tif -R 4 -t 20 -o croton_test.zip`
 
 ## NCAR Disclaimer
+
 The National Center for Atmospheric Research (NCAR) GitHub project code is provided on an "as is" basis and the user assumes responsibility for its use.  NCAR has relinquished control of the information and no longer has responsibility to protect the integrity , confidentiality, or availability of the information.  Any reference to specific commercial products, processes, or services by service mark, trademark, manufacturer, or otherwise, does not constitute or imply their endorsement, recommendation or favoring by NCAR.  The NCAR seal and logo shall not be used in any manner to imply endorsement of any commercial product or activity by NCAR or the National Science Foundation (NSF).
